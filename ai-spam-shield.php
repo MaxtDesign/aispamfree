@@ -3,7 +3,7 @@
  * Plugin Name: AI Spam Shield
  * Description: Uses AI LLM models to detect spam in contact form submissions
  * Version: 1.0.0
- * Author: Your Name
+ * Author: MaxtDesign <Cody Hardman>
  * Text Domain: ai-spam-shield
  */
 
