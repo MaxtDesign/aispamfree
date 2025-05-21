@@ -1,0 +1,201 @@
+/**
+ * AI Spam Shield - Admin Styles
+ */
+
+/* Admin Page Layout */
+.ai-spam-shield-admin {
+    max-width: 1200px;
+}
+
+.ai-spam-shield-admin .form-table th {
+    width: 200px;
+}
+
+/* Tabbed Interface */
+.ai-spam-shield-tabs-wrapper {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ai-spam-shield-tabs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ai-spam-shield-tabs li {
+    margin: 0;
+}
+
+.ai-spam-shield-tab-link {
+    display: block;
+    padding: 10px 15px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    margin-right: 5px;
+    border-radius: 3px 3px 0 0;
+}
+
+.ai-spam-shield-tab-link.active {
+    background: #fff;
+    border-bottom-color: #fff;
+    color: #0073aa;
+}
+
+.ai-spam-shield-tab-content {
+    display: none;
+    padding: 20px 0;
+}
+
+.ai-spam-shield-tab-content h2 {
+    margin-top: 0;
+}
+
+/* Footer */
+.ai-spam-shield-footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    color: #666;
+}
+
+/* Test Tool */
+.ai-spam-shield-test-container {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.ai-spam-shield-result-box {
+    background: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.ai-spam-shield-result-box h3 {
+    margin-top: 0;
+}
+
+.ai-spam-shield-sample-message {
+    margin: 0 10px 10px 0 !important;
+}
+
+/* Tooltips */
+.ai-spam-shield-tooltip {
+    cursor: help;
+    color: #0073aa;
+    vertical-align: middle;
+}
+
+.ai-spam-shield-tooltip-popup {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    max-width: 300px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.ai-spam-shield-tooltip-popup:after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 5px 0;
+    border-color: transparent #333 transparent transparent;
+}
+
+/* Slider */
+.ai-spam-shield-slider {
+    width: 200px;
+    vertical-align: middle;
+}
+
+#confidence_threshold_value {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Dashboard Widget */
+.ai-spam-shield-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.ai-spam-shield-stat-item {
+    flex: 1 0 45%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ai-spam-shield-stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0073aa;
+    margin-bottom: 5px;
+}
+
+.ai-spam-shield-stat-label {
+    display: block;
+    color: #444;
+}
+
+.ai-spam-shield-stat-breakdown {
+    flex: 0 0 100%;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.ai-spam-shield-stat-breakdown h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.ai-spam-shield-stat-breakdown ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.ai-spam-shield-settings-link {
+    margin-top: 15px;
+    text-align: right;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .ai-spam-shield-tabs {
+        flex-direction: column;
+    }
+    
+    .ai-spam-shield-tabs li {
+        margin-bottom: 5px;
+    }
+    
+    .ai-spam-shield-tab-link {
+        border-radius: 3px;
+        border-bottom: 1px solid #ccc;
+    }
+}
